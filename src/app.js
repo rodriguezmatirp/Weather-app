@@ -10,6 +10,8 @@ const publicDirectoryPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')
 
+const port = process.env.PORT || 3000
+
 app.set('views', viewsPath)
 app.set('view engine', 'hbs')
 
@@ -78,6 +80,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () =>
-    console.log('server running in 3000 port')
+app.listen(port, () =>
+    console.log('server running in ' + port + ' port ')
 )
