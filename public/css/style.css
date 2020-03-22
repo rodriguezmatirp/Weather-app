@@ -1,0 +1,50 @@
+h1 {
+    color: white;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    color: red;
+    background-color: black;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+header {
+    color: #888888;
+    padding-bottom: 20px;
+}
+
+header a {
+    color: #888888;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+footer {
+    border-top: 2px solid #888888;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid red;
+}
+
+button {
+    padding: 8px;
+    color: #888888;
+    cursor: pointer;
+    background: #cccccc;
+    border: 1px solid white;
+}
