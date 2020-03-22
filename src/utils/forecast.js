@@ -13,8 +13,8 @@ const forecast = (latitude, longitude, callback) => {
                 Summary: body.daily.data[0].summary,
                 Current_Weather: body.currently.temperature,
                 Rain_Probability: body.currently.precipProbability + ' %',
-                Max_Temperature: body.daily.temperatureMax,
-                Min_Temperature: body.daily.temperatureMin
+                Max_Temperature: body.daily.data[0].temperatureMax,
+                Min_Temperature: body.daily.data[0].temperatureMin
             })
         }
     })
