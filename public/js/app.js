@@ -21,7 +21,7 @@ weatherForm.addEventListener('submit', (e) => {
             console.log(data.location)
             console.log(data.forecast)
             msgTwo.textContent = 'It is ' + data.forecast.Summary + '\nIt is currently ' + data.forecast.Current_Weather + ' . \nThe Rain Probabiliy is ' + data.forecast.Rain_Probability + ' .\n'
-            msgThree.textContent = 'Maximum Temperature - ' + data.forecast.Max_Temperature + '\n Minimum Temperature - ' + data.forecast.Min_Temperature
+            msgThree.textContent = 'Maximum Temperature - ' + data.forecast.Max_Temperature + '  Minimum Temperature - ' + data.forecast.Min_Temperature
             msgOne.textContent = data.location
 
         })
